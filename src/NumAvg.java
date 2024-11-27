@@ -2,13 +2,13 @@ import java.util.Scanner;
 public class NumAvg {
     public static void main(String[] args) throws Exception {
         Scanner numInputScanner = new Scanner(System.in);
-        System.out.println("Enter ten numbers to recieve an average: ");
+        System.out.println("Enter ten numbers to receive an average: ");
         double tenNums[] = new double[10];
         for (int i=0; i<10; i++){
             tenNums[i] = numInputScanner.nextDouble();
         }
         
-        System.out.println("Average of numbers is: " + average(tenNums)); 
+        System.out.printf("Average of numbers is: %.2f%n ",average(tenNums)); 
         numInputScanner.close();
     }
    public static int average(int[] array){;  
